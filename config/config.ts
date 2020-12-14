@@ -13,6 +13,5 @@ export default defineConfig({
   title: false,
   hash: true,
   ignoreMomentLocale: true,
-  history: { type: 'hash' },
-  outputPath: './dist'
+  history: { type: 'hash' }
 });

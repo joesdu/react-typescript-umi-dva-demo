@@ -1,5 +1,4 @@
 import { RequestConfig } from 'umi';
-import { produceVersion } from '../config/version.config';
 
 export const request: RequestConfig = {
   // timeout: 1000,
@@ -17,7 +16,7 @@ export const request: RequestConfig = {
   credentials: 'include',
   middlewares: [],
   requestInterceptors: [
-    (url: string, options) => {
+    (url: string, options: any) => {
       localStorage.setItem('date', Date.now().toString());
       const token = localStorage.getItem('userToken');
       options.headers = { Authorization: token ? token : '' };

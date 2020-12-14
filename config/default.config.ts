@@ -7,7 +7,7 @@ type DefaultSettings = ProSettings & {
 const proSettings: DefaultSettings = {
   navTheme: 'dark',
   primaryColor: '#F5222D',
-  layout: 'sidemenu',
+  layout: 'side',
   contentWidth: 'Fluid',
   fixedHeader: false,
   fixSiderbar: false,
